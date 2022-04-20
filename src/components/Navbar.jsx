@@ -34,6 +34,8 @@ const SocialBar = (props) => {
     <a
       className="flex justify-between items-center w-full text-gray-300"
       href={props.redirect}
+      target="_blank"
+      rel="noreferrer"
     >
       {props.name} {props.icon}
     </a>
