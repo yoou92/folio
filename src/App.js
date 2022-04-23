@@ -9,7 +9,7 @@ function App() {
   return (
     <div>
       <Navbar />
-      <div class="bg-[#7010a8]">
+      <div class="bg-gradient-to-br from-main via-black to-secondary ">
         <Home />
         <About />
         <Skills />
