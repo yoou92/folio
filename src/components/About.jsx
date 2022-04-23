@@ -1,4 +1,6 @@
 import React from "react";
+import DownButtonRedirect from "./DownButtonRedirect";
+import UpButtonRedirect from "./UpButtonRedirect";
 
 const About = () => {
   return (
@@ -25,6 +27,8 @@ const About = () => {
               a software expert available at your fingertips?
             </p>
           </div>
+          <DownButtonRedirect to="skills" />
+          <UpButtonRedirect to="home" />
         </div>
       </div>
     </div>
