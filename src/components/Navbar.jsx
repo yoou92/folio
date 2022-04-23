@@ -32,7 +32,7 @@ const MenuBarResponsive = (props) => {
 const SocialBar = (props) => {
   return (
     <a
-      className="flex justify-between items-center w-full text-gray-300"
+      className="flex justify-between items-center w-full text-gray-300 text-xl font-bold"
       href={props.redirect}
       target="_blank"
       rel="noreferrer"
@@ -51,11 +51,11 @@ const Navbar = () => {
       <br />
       {/* menu */}
       <ul className="hidden md:flex">
-        <MenuBar to="home" name="Home" />
-        <MenuBar to="about" name="About" />
-        <MenuBar to="skills" name="Skills" />
-        <MenuBar to="work" name="Work" />
-        <MenuBar to="contact" name="Contact" />
+        <MenuBar to="home" name="Accueil" />
+        <MenuBar to="about" name="À propos" />
+        <MenuBar to="skills" name="Compétences" />
+        <MenuBar to="work" name="Expérience" />
+        <MenuBar to="contact" name="Contacte" />
       </ul>
 
       {/* Hamburger */}
