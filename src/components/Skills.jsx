@@ -1,15 +1,28 @@
 import React from "react";
-
 import HTML from "../assets/html.png";
 import CSS from "../assets/css.png";
 import JavaScript from "../assets/javascript.png";
+import TypeScript from "../assets/typescript.png";
 import ReactImg from "../assets/react.png";
 import Node from "../assets/node.png";
-import FireBase from "../assets/firebase.png";
-import AWS from "../assets/aws.png";
+import Cpp from "../assets/cpp.png";
+import C from "../assets/c.png";
+import Bash from "../assets/bash.png";
 import GitHub from "../assets/github.png";
 import Tailwind from "../assets/tailwind.png";
 import Mongo from "../assets/mongo.png";
+import Linux from "../assets/linux.png";
+import PostgreSQL from "../assets/postgresql.png";
+import VSCode from "../assets/vscode.png";
+
+const Skill = (props) => {
+  return (
+    <div className="shadow-lg shadow-secondary hover:scale-110 duration-300 hover:shadow-main">
+      <img className="my-4 w-20 mx-auto" src={props.logo} alt="icon" />
+      <p className="my-4">{props.name}</p>
+    </div>
+  );
+};
 
 const Skills = () => {
   return (
@@ -17,45 +30,26 @@ const Skills = () => {
       {/* Container */}
       <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full">
         <div>
-          <p className="text-4xl font-bold inline border-b-4 border-pink-600 ">
-            Skills
+          <p className="text-4xl font-bold inline border-b-4 border-secondary">
+            Compétences
           </p>
-          <p className="py-4">// These are the technologies I've worked with</p>
         </div>
-
-        <div className="w-full grid grid-cols-2 sm:grid-cols-4 gap-4 text-center py-8">
-          <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
-            <img className="w-20 mx-auto" src={HTML} alt="HTML icon" />
-            <p className="my-4">HTML</p>
-          </div>
-          <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
-            <img className="w-20 mx-auto" src={CSS} alt="HTML icon" />
-            <p className="my-4">CSS</p>
-          </div>
-          <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
-            <img className="w-20 mx-auto" src={JavaScript} alt="HTML icon" />
-            <p className="my-4">JAVASCRIPT</p>
-          </div>
-          <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
-            <img className="w-20 mx-auto" src={ReactImg} alt="HTML icon" />
-            <p className="my-4">REACT</p>
-          </div>
-          <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
-            <img className="w-20 mx-auto" src={GitHub} alt="HTML icon" />
-            <p className="my-4">GITHUB</p>
-          </div>
-          <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
-            <img className="w-20 mx-auto" src={Node} alt="HTML icon" />
-            <p className="my-4">NODE JS</p>
-          </div>
-          <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
-            <img className="w-20 mx-auto" src={Mongo} alt="HTML icon" />
-            <p className="my-4">MONGO DB</p>
-          </div>
-          <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
-            <img className="w-20 mx-auto" src={AWS} alt="HTML icon" />
-            <p className="my-4">AWS</p>
-          </div>
+        <div className="w-full grid grid-cols-2 sm:grid-cols-5 md:gap-4 text-center py-8">
+          <Skill name="C" logo={C} />
+          <Skill name="C++" logo={Cpp} />
+          <Skill name="Bash" logo={Bash} />
+          <Skill name="Linux" logo={Linux} />
+          <Skill name="GitHub" logo={GitHub} />
+          <Skill name="TypeScript" logo={TypeScript} />
+          <Skill name="JavaScript" logo={JavaScript} />
+          <Skill name="React" logo={ReactImg} />
+          <Skill name="NodeJS" logo={Node} />
+          <Skill name="Tailwind CSS" logo={Tailwind} />
+          <Skill name="PostgreSQL" logo={PostgreSQL} />
+          <Skill name="Mongo DB" logo={Mongo} />
+          <Skill name="HTML" logo={HTML} />
+          <Skill name="CSS" logo={CSS} />
+          <Skill name="Visual Studio Code" logo={VSCode} />
         </div>
       </div>
     </div>
