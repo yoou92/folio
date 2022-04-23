@@ -14,9 +14,8 @@ module.exports = {
         silver: "#ecebff",
         "bubble-gum": "#ff77e9",
         bermuda: "#78dcca",
-        main: "#3ab7bf", // bleu turquoise
-        secondary: "#6be0dc",
-        customPurple: "#a600a6",
+        main: "#4031D9",
+        secondary: "#8A37DC",
       },
     },
   },
