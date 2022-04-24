@@ -47,7 +47,7 @@ const Navbar = () => {
   const handleClick = () => setNav(!nav);
 
   return (
-    <div class="fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300">
+    <div class="fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-white">
       <br />
       {/* menu */}
       <ul class="hidden md:flex">
@@ -55,7 +55,7 @@ const Navbar = () => {
         <MenuBar to="about" name="À propos" />
         <MenuBar to="skills" name="Compétences" />
         <MenuBar to="work" name="Expérience" />
-        <MenuBar to="contact" name="Contacte" />
+        <MenuBar to="contact" name="Contact" />
       </ul>
 
       {/* Hamburger */}
