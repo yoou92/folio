@@ -21,7 +21,10 @@ const Skill = (props) => {
   return (
     <div class="shadow-lg shadow-secondary hover:scale-110 duration-300 hover:shadow-main">
       <img class="my-4 w-20 mx-auto" src={props.logo} alt="icon" />
-      <p class="my-4">{props.name}</p>
+      <p class="my-4 text-white font-semibold">
+        {props.name == "GitHub" ? <div class="py-2" /> : null}
+        {props.name}
+      </p>
     </div>
   );
 };
