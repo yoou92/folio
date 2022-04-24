@@ -17,7 +17,7 @@ const Projet = (props) => {
           <img class={props.fullScreen ? "h-full" : ""} src={props.logo} />
         </div>
         <div class="sticky inset-0 w-full h-full flex justify-center items-center bg-black transition-all z-10 rotate-180">
-          aaaaaaaaaaaaaaaaaaaaaaaa
+          {props.name}
         </div>
       </div>
     </div>
@@ -42,7 +42,7 @@ const Work = () => {
           <Projet name="my_rpg" logo={rpg} fullScreen={true} />
           <Projet name="my_web" logo={web} fullScreen={true} />
         </div>
-        <div class="flex justify-between">
+        <div class="flex py-6 justify-between">
           <DownButtonRedirect to="contact" />
           <UpButtonRedirect to="skills" />
         </div>
