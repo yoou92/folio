@@ -5,18 +5,19 @@ import malloc from "../assets/malloc.png";
 import shell from "../assets/42sh.png";
 import rpg from "../assets/rpg.png";
 import web from "../assets/web.jpg";
+import DownButtonRedirect from "./DownButtonRedirect";
+import UpButtonRedirect from "./UpButtonRedirect";
 
 const Projet = (props) => {
   return (
     <div>
       <div class="w-72 text-center font-bold text-2xl">{props.name}</div>
       <div class="w-72 h-60 rounded-2xl text-white overflow-hidden cursor-pointer transition-all duration-700 hover:rotate-180">
-        <div class=" inset-0 w-full h-full flex justify-center items-center bg-white transition-all duration-500 delay-200 z-20 hover:opacity-0 ">
+        <div class="sticky inset-0 w-full h-full flex justify-center items-center bg-white transition-all duration-500 delay-200 z-20 hover:opacity-0 ">
           <img class={props.fullScreen ? "h-full" : ""} src={props.logo} />
         </div>
-        <div class="absolute inset-0 w-full h-full flex justify-center items-center bg-black transition-all z-10 rotate-180">
-          aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-          aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+        <div class="sticky inset-0 w-full h-full flex justify-center items-center bg-black transition-all z-10 rotate-180">
+          aaaaaaaaaaaaaaaaaaaaaaaa
         </div>
       </div>
     </div>
@@ -40,6 +41,10 @@ const Work = () => {
           <Projet name="42sh" logo={shell} fullScreen={true} />
           <Projet name="my_rpg" logo={rpg} fullScreen={true} />
           <Projet name="my_web" logo={web} fullScreen={true} />
+        </div>
+        <div class="flex justify-between">
+          <DownButtonRedirect to="contact" />
+          <UpButtonRedirect to="skills" />
         </div>
       </div>
     </div>
