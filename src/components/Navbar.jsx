@@ -114,7 +114,7 @@ const Navbar = () => {
             <SocialBar
               name="Resume"
               icon={<BsFillPersonLinesFill size={30} />}
-              redirect="my_cv"
+              redirect="resume"
             />
           </li>
         </ul>
