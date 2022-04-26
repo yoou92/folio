@@ -32,7 +32,7 @@ const MenuBarResponsive = (props) => {
 const SocialBar = (props) => {
   return (
     <a
-      class="flex justify-between items-center w-full text-gray-300 text-xl font-bold"
+      class="flex justify-between items-center w-full text-white text-xl font-bold"
       href={props.redirect}
       target="_blank"
       rel="noreferrer"
@@ -52,9 +52,9 @@ const Navbar = () => {
       {/* menu */}
       <ul class="hidden md:flex">
         <MenuBar to="home" name="Accueil" />
-        <MenuBar to="about" name="À propos" />
+        <MenuBar to="about" name="À propos de moi" />
         <MenuBar to="skills" name="Compétences" />
-        <MenuBar to="work" name="Expérience" />
+        <MenuBar to="work" name="Expériences" />
         <MenuBar to="contact" name="Contact" />
       </ul>
 
@@ -71,14 +71,22 @@ const Navbar = () => {
             : "absolute top-0 left-0 w-full h-screen bg-[#0a192f] flex flex-col justify-center items-center"
         }
       >
-        <MenuBarResponsive to="home" name="Home" handleClick={handleClick} />
-        <MenuBarResponsive to="about" name="About" handleClick={handleClick} />
+        <MenuBarResponsive to="home" name="Accueil" handleClick={handleClick} />
         <MenuBarResponsive
-          to="skills"
-          name="Skills"
+          to="about"
+          name="À propos de moi"
           handleClick={handleClick}
         />
-        <MenuBarResponsive to="work" name="Work" handleClick={handleClick} />
+        <MenuBarResponsive
+          to="skills"
+          name="Compétences"
+          handleClick={handleClick}
+        />
+        <MenuBarResponsive
+          to="work"
+          name="Experiences"
+          handleClick={handleClick}
+        />
         <MenuBarResponsive
           to="contact"
           name="Contact"
