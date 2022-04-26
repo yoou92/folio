@@ -4,12 +4,12 @@ import UpButtonRedirect from "./UpButtonRedirect";
 
 const About = () => {
   return (
-    <div name="about" class="w-full h-screen text-gray-300">
+    <div name="about" class="w-full h-screen text-white">
       <div class="flex flex-col justify-center items-center w-full h-full">
         <div class="max-w-[1000px] w-full grid grid-cols-2 gap-8">
           <div class="sm:text-right pb-8 pl-4">
             <p class="text-4xl font-bold inline border-b-4 border-secondary">
-              About
+              À propos de moi
             </p>
           </div>
           <div></div>
