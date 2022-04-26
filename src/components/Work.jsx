@@ -1,10 +1,10 @@
 import React from "react";
-import ublo from "../assets/ublo.png";
-import arcade from "../assets/arcade.png";
-import malloc from "../assets/malloc.png";
-import shell from "../assets/42sh.png";
-import rpg from "../assets/rpg.png";
-import web from "../assets/web.jpg";
+import ublo from "../assets/projets/ublo.png";
+import arcade from "../assets/projets/arcade.png";
+import malloc from "../assets/projets/malloc.png";
+import shell from "../assets/projets/42sh.png";
+import rpg from "../assets/projets/rpg.png";
+import web from "../assets/projets/web.jpg";
 import DownButtonRedirect from "./DownButtonRedirect";
 import UpButtonRedirect from "./UpButtonRedirect";
 import "./ScrollBar.css";
@@ -54,13 +54,17 @@ const Projets = () => {
           "React",
           "NodeJS",
           "React-Admin",
-          "TailwindCSS",
-          "Styled-Components",
-          "Postman",
-          "Docker",
           "PostgreSQL",
           "MongoDB",
+          "TailwindCSS",
+          "Styled-Components",
+          "Material-UI",
+          "Postman",
+          "Docker",
           "GitHub",
+          "Nest",
+          "DBeaver",
+          "Figma",
         ]}
       />
       <Projet
