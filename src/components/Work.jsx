@@ -38,7 +38,7 @@ const Projet = (props) => {
 
 const Projets = () => {
   return (
-    <div class="overflow-y-auto h-4/6 shadow-lg shadow-main space-y-36 border-main border-2 rounded p-4">
+    <div class="overflow-y-auto h-4/6 shadow-lg shadow-main space-y-36 border-main border-2 rounded-lg p-4">
       <Projet
         name="Ublo"
         logo={ublo}
