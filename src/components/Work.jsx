@@ -11,8 +11,8 @@ import "./ScrollBar.css";
 
 const Projet = (props) => {
   return (
-    <div class="rounded-xl">
-      <div class="flex items-center justify-center w-full h-full bg-white rounded-xl object-center">
+    <div class="">
+      <div class="flex items-center justify-center w-full pt-4 h-full object-center">
         <img
           class="rounded-xl bg-cover bg-center"
           src={props.logo}
@@ -20,7 +20,15 @@ const Projet = (props) => {
         />
       </div>
       <div class="px-6 py-4">
-        <div class="text-white font-bold text-xl mb-8">{props.name}</div>
+        <div class=" text-white font-bold text-2xl mb-8">
+          {props.name}
+          {props.done ? (
+            <div class="text-secondary flex justify-end text-md">Terminé</div>
+          ) : (
+            <div class="text-main flex justify-end text-md">En cours...</div>
+          )}
+        </div>
+
         {props.description.map((text, i) => (
           <div class="text-white text-base">{text}</div>
         ))}
@@ -38,15 +46,15 @@ const Projet = (props) => {
 
 const Projets = () => {
   return (
-    <div class="overflow-y-auto h-4/6 shadow-lg shadow-main space-y-36 border-main border-2 rounded-lg p-4">
+    <div class="overflow-y-auto h-4/6 shadow-lg shadow-main space-y-20 border-main border-2 rounded-lg p-4 divide-y divide-solid divide-secondary">
       <Projet
         name="Ublo"
         logo={ublo}
         description={[
           "Stage de 6 mois en tant que développer Full-Stack chez Ublo.immo.",
-          "Ublo vise à simplifier la gestion locative par l'intermédiaire d'un logiciel de gestion immobilière intuitif et efficace",
-          "J'ai été chargé de développer dans un premier temps un formulaire d'état des lieux d'entrée et de sortie devant être rempli sur une tablette",
-          "Et dans second temps, de travailler sur le site web d'Ublo pour les clients",
+          "Ublo vise à simplifier la gestion locative par l'intermédiaire d'un logiciel de gestion immobilière intuitif et efficace.",
+          "J'ai été chargé de développer dans un premier temps un formulaire d'état des lieux d'entrée et de sortie devant être effectué sur tablette.",
+          "Et dans second temps, de travailler sur le site web d'Ublo pour les clients.",
         ]}
         techUsed={[
           "TypeScript",
@@ -66,30 +74,35 @@ const Projets = () => {
           "DBeaver",
           "Figma",
         ]}
+        done={true}
       />
       <Projet
         name="Arcade"
         logo={arcade}
         description={["tres intéreasn"]}
         techUsed={["C++", "GitHub"]}
+        done={true}
       />
       <Projet
         name="my_malloc"
         logo={malloc}
         description={["tres intéreasn"]}
         techUsed={["C", "GitHub"]}
+        done={true}
       />
       <Projet
         name="42sh"
         logo={shell}
         description={["tres intéreasn"]}
         techUsed={["C", "GitHub"]}
+        done={true}
       />
       <Projet
         name="my_rpg"
         logo={rpg}
         description={["tres intéreasn"]}
         techUsed={["C", "GitHub"]}
+        done={true}
       />
       <Projet
         name="my_web"
@@ -109,6 +122,7 @@ const Projets = () => {
           "MongoDB",
           " GitHub",
         ]}
+        done={true}
       />
     </div>
   );
@@ -116,7 +130,7 @@ const Projets = () => {
 
 const Work = () => {
   return (
-    <div name="work" class="w-full md:h-screen text-gray-300 ">
+    <div name="work" class="w-full md:h-screen text-white">
       <div class="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full">
         <div class="pb-8">
           <p class="text-4xl font-bold inline border-b-4 text-white border-secondary">
