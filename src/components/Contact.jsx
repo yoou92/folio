@@ -21,7 +21,7 @@ const Contact = () => {
         <input
           class="rounded-md bg-secondary text-white placeholder-gray-400 p-2"
           type="text"
-          placeholder="Name"
+          placeholder="NOM Prénom"
           name="name"
         />
         <input
@@ -34,7 +34,7 @@ const Contact = () => {
           class="rounded-md bg-secondary text-white placeholder-gray-400 p-2"
           name="message"
           rows="10"
-          placeholder="Message"
+          placeholder="Votre message"
         ></textarea>
         <button class="text-white border-2 hover:bg-secondary hover:border-secondary px-4 py-3 my-8 mx-auto flex items-center rounded-xl">
           Collaborons !
