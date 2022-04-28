@@ -38,7 +38,7 @@ const Skills = () => {
             Compétences
           </p>
         </div>
-        <div class="w-full grid grid-cols-2 sm:grid-cols-5 gap-4 md:gap-6 text-center py-8">
+        <div class="w-full grid grid-cols-2 xs:grid-cols-3 sm:grid-cols-5 gap-4 md:gap-6 text-center py-8">
           <Skill name="C" logo={C} />
           <Skill name="C++" logo={Cpp} />
           <Skill name="Bash" logo={Bash} />
