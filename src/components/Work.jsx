@@ -290,7 +290,7 @@ const Projets = () => {
 
 const Work = () => {
   return (
-    <div name="work" class="w-full md:h-screen text-white">
+    <div name="work" class="w-full h-screen text-white">
       <div class="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full">
         <div class="pb-8">
           <p class="text-4xl font-bold inline border-b-4 text-white border-secondary">
