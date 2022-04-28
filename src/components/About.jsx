@@ -11,8 +11,8 @@ const About = () => {
     <div name="about" class="w-full h-screen text-white">
       <div class="flex flex-col justify-center items-center w-full h-full">
         <div class="max-w-[1000px] w-full grid grid-cols-2 gap-8">
-          <div class="sm:text-right pb-8 pl-4">
-            <p class="text-4xl font-bold inline border-b-4 border-secondary">
+          <div class="sm:text-right xs:mt-8 sm:mt-0 pb-6 pl-4">
+            <p class="xs:text-2xl sm:text-4xl font-bold inline border-b-4 border-secondary">
               À propos de moi
             </p>
           </div>
