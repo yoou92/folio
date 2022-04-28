@@ -2,6 +2,10 @@ import React from "react";
 import DownButtonRedirect from "./DownButtonRedirect";
 import UpButtonRedirect from "./UpButtonRedirect";
 
+const UnderlinedText = ({ text }) => {
+  return <div class="inline underline underline-offset-2">{text}</div>;
+};
+
 const About = () => {
   return (
     <div name="about" class="w-full h-screen text-white">
@@ -15,17 +19,44 @@ const About = () => {
           <div></div>
         </div>
         <div class="max-w-[1000px] w-full grid sm:grid-cols-2 gap-8 px-4">
-          <div class="sm:text-right text-4xl font-bold">
-            <p>Hi. I'm Wassini, nice to meet you. Please take a look around.</p>
+          <div class="sm:text-left text-3xl font-bold">
+            <div class="text-transparent bg-clip-text bg-gradient-to-br from-secondary to-main">
+              <div>• Président d'EpiSolidaire</div>
+              <div>• Lead Dev chez EpiSolidaire</div>
+              <div>• Développeur chez Epitech</div>
+            </div>
           </div>
           <div>
-            <p>
-              I am passionate about building excellent software that improves
-              the lives of those around me. I specialize in creating software
-              for clients ranging from individuals and small-businesses all the
-              way to large enterprise corporations. What would you do if you had
-              a software expert available at your fingertips?
-            </p>
+            <div>
+              <UnderlinedText text="Passionné" />,{" "}
+              <UnderlinedText text="autodidacte" /> et{" "}
+              <UnderlinedText text="soucieux de bien faire" />. J'ai décidé de
+              poursuivre mes études supérieures dans la programmation et
+              l'expertise technologique. C'est pour cela que j'ai décidé de
+              rejoindre Epitech.
+            </div>
+            <div>
+              Ma <UnderlinedText text="persévérance" /> et ma{" "}
+              <UnderlinedText text="rigueur" /> m'ont aujourd'hui amené à
+              pouvoir développer mes projets en toute{" "}
+              <UnderlinedText text="autonomie" /> et à pouvoir{" "}
+              <UnderlinedText text="apprendre à apprendre" />.
+            </div>
+            <div>
+              Le <UnderlinedText text="partage" /> et la{" "}
+              <UnderlinedText text="solidarité" /> sont des principes qui me
+              tiennent à coeur, c'est pour cela que j'ai décidé de devenir
+              président d'une association de solidarité qui se nomme{" "}
+              <UnderlinedText text="EpiSolidaire" />.
+            </div>
+            <div>
+              L'association dispose également d'une{" "}
+              <UnderlinedText text="équipe de développeurs" /> dont je suis le
+              lead car nous sommes actuellement en train de développer notre
+              propre site EpiSolidaire et que certains{" "}
+              <UnderlinedText text="projets de solidarité" /> se font également
+              dans le domaine de la programmation.
+            </div>
           </div>
           <DownButtonRedirect to="skills" />
           <UpButtonRedirect to="home" />
