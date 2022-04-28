@@ -101,7 +101,7 @@ const Navbar = () => {
             <SocialBar
               name="LinkedIn"
               icon={<FaLinkedin size={30} />}
-              redirect="https://www.linkedin.com/in/wassini-bouzidi-ublo/"
+              redirect="https://www.linkedin.com/in/wassini-bouzidi/"
             />
           </li>
           <li class="rounded-xl w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#333333]">
