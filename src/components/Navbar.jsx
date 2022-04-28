@@ -111,14 +111,14 @@ const Navbar = () => {
               redirect="https://github.com/wassb92"
             />
           </li>
-          <li class="rounded-xl w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#6fc2b0]">
+          <li class="rounded-xl w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#00A4EF]">
             <SocialBar
               name="Email"
               icon={<HiOutlineMail size={30} />}
               redirect="mailto:wassini.bouzidi@epitech.eu"
             />
           </li>
-          <li class="rounded-xl w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#565f69]">
+          <li class="rounded-xl w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-gray-700">
             <SocialBar
               name="Resume"
               icon={<BsFillPersonLinesFill size={30} />}
