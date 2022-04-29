@@ -4,16 +4,9 @@ import "./index.css";
 import App from "./App";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import NotFound from "./components/NotFound";
-import background from "./assets/resume.png";
+import Resume from "./components/Resume";
 
-const Resume = () => {
 
-  return (
-    <div class="w-full h-full flex justify-center p-4 bg-gradient-to-br from-main to-secondary">
-      <img src={background} alt="resume" />
-    </div>
-  );
-}
 
 ReactDOM.render(
   <React.StrictMode>
