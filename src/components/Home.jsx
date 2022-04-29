@@ -31,7 +31,7 @@ const Home = () => {
           </div>
           <div class="mt-10 font-semibold">Prêt à me découvrir ?</div>
         </div>
-        <div class="text-white flex items-center">
+        <div class="text-white grid sm:grid-cols-2 gap-4 items-center">
           <Link to="about" smooth={true} duration={350}>
             <button class="group border-2 px-6 py-3 my-2 flex items-center hover:bg-secondary hover:border-secondary rounded-xl">
               C'est parti !
@@ -40,6 +40,16 @@ const Home = () => {
               </span>
             </button>
           </Link>
+          <div>
+            <a
+              class="p-3 border-2 font-semibold text-white rounded-xl transition-all duration-500 bg-gradient-to-br from-main via-black to-secondary bg-size-200 hover:bg-right-bottom"
+              href="resume"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Accéder directement à mon CV
+            </a>
+          </div>
         </div>
       </div>
     </div>
