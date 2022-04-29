@@ -1,6 +1,35 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-scroll";
 import { HiArrowNarrowRight } from "react-icons/hi";
+import HelpOutlineIcon from "@mui/icons-material/HelpOutline";
+import CloseIcon from "@mui/icons-material/Close";
+
+const EndIntern = () => {
+  const [open, setOpen] = useState(false);
+
+  const Help = () => {
+    return (
+      <div class="absolute">
+        <button class="absolute top-0 right-0 -mt-3 -mr-2">
+          <CloseIcon
+            style={{ fontSize: 30, color: "red" }}
+            onClick={() => setOpen(false)}
+          />
+        </button>
+        <div class="bg-white rounded-xl border-2 border-main text-main text-lg p-3">
+          La date de fin dépend de la date de rentrée de ma 4ème année.
+        </div>
+      </div>
+    );
+  };
+
+  return (
+    <button type="button" class="cursor-pointer">
+      <HelpOutlineIcon onClick={() => setOpen(!open)} />
+      {open && <Help />}
+    </button>
+  );
+};
 
 const Home = () => {
   return (
@@ -24,10 +53,11 @@ const Home = () => {
           </p>
           .
           <div class="mt-2">
-            À la recherche d'un part-time de deux jours par semaine d'octobre à
-            avril, suivi d'un stage d'avril à août afin d'appronfondir mes
-            connaissances, d'évoluer dans un domaine qui me plait et de pourvoir
-            satisfaire un besoin.
+            Pour ma 3ème année je suis à la recherche d'un part-time de deux
+            jours par semaine d'octobre à avril, suivi d'un stage d'avril aux
+            environ d'août <EndIntern /> afin d'appronfondir mes connaissances,
+            d'évoluer dans un domaine qui me plait et de pourvoir satisfaire un
+            besoin.
           </div>
           <div class="mt-10 font-semibold">Prêt à me découvrir ?</div>
         </div>
