@@ -1,41 +1,18 @@
-import React, { useRef } from "react";
+import React from "react";
 import DownButtonRedirect from "./DownButtonRedirect";
 import UpButtonRedirect from "./UpButtonRedirect";
-import emailjs from "@emailjs/browser";
 
 const Contact = () => {
-  const form = useRef();
 
-  const sendEmail = async (e) => {
-    e.preventDefault();
 
-    const send = await emailjs.sendForm(
-      "service_djl78up",
-      "template_ecfvlll",
-      form.current,
-      "Zr5H8LyBS47OALrKE"
-    );
-    console.log(send);
-
-    // .then(
-    //   (result) => {
-    //     console.log("result.text = ", result.text);
-    //   },
-    //   (error) => {
-    //     // ErrorPopUp();
-    //     console.log("error.text = ", error.text);
-    //   }
-    // );
-    e.target.reset();
-  };
   return (
     <div
       name="contact"
       class="w-full h-screen flex justify-center items-center p-4"
     >
       <form
-        ref={form}
-        onSubmit={sendEmail}
+        method="POST"
+        action="https://getform.io/f/ac3eef9d-4db1-4ecb-ba0f-de52ca69ed5d"
         class="flex flex-col max-w-[600px] w-full text-white space-y-4"
       >
         <div class="pb-8">
