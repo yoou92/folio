@@ -17,6 +17,9 @@ module.exports = {
         lg: "1280px",
         xl: "1440px",
       },
+      backgroundSize: {
+        "size-200": "200% 200%",
+      },
       /* Custom Colors */
       colors: {
         transparent: "transparent",
