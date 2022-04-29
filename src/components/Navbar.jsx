@@ -127,6 +127,32 @@ const Navbar = () => {
           </li>
         </ul>
       </div>
+      <div class="flex lg:hidden fixed space-x-3">
+        <li class="flex py-2 rounded-xl bg-blue-600">
+          <SocialBar
+            icon={<FaLinkedin size={30} />}
+            redirect="https://www.linkedin.com/in/wassini-bouzidi/"
+          />
+        </li>
+        <li class="flex py-2 rounded-xl bg-[#333333]">
+          <SocialBar
+            icon={<FaGithub size={30} />}
+            redirect="https://github.com/wassb92"
+          />
+        </li>
+        <li class="flex py-2 rounded-xl bg-[#00A4EF]">
+          <SocialBar
+            icon={<HiOutlineMail size={30} />}
+            redirect="mailto:wassini.bouzidi@epitech.eu"
+          />
+        </li>
+        <li class="flex py-2 rounded-xl bg-gray-700">
+          <SocialBar
+            icon={<BsFillPersonLinesFill size={30} />}
+            redirect="resume"
+          />
+        </li>
+      </div>
     </div>
   );
 };
