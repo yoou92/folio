@@ -86,6 +86,8 @@ const Projets = () => {
           "DBeaver",
           "Figma",
           "Notion",
+          "Méthode agile",
+          "Clean architecture",
         ]}
         done={true}
         nmemb={5}
