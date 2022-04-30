@@ -35,9 +35,11 @@ const Home = () => {
   return (
     <div name="home" class="w-full h-screen">
       <div class="max-w-[1000px] mx-auto px-8 flex flex-col justify-center h-full">
-        <div class="text-secondary font-bold text-xl">Salutations !</div>
-        <div class="text-4xl sm:text-7xl font-bold text-white">
-          Wassini Bouzidi
+        <div class="pt-24">
+          <div class="text-secondary font-bold text-xl">Salutations !</div>
+          <div class="text-4xl sm:text-7xl font-bold text-white ">
+            Wassini Bouzidi
+          </div>
         </div>
         <div class="text-4xl sm:text-6xl font-bold text-gray-400">
           Développeur chez Epitech Paris
