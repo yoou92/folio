@@ -299,6 +299,7 @@ const Work = () => {
             Expériences
           </p>
         </div>
+        <div class="inline text-right">(Défilable)</div>
         <Projets />
         <div class="flex p-4 justify-between">
           <DownButtonRedirect to="contact" />
