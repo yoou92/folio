@@ -19,7 +19,7 @@ const DownloadResume = (props) => {
 const Resume = () => {
   return (
     <div class="w-full h-full text-center bg-gradient-to-br from-main to-secondary">
-      <div class="flex justify-center p-4">
+      <div class="flex justify-center p-4 md:px-80">
         <img
           src={resumePng}
           class="rounded-xl object-cover w-full h-full"
