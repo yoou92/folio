@@ -1,5 +1,6 @@
 import React from "react";
 import resumePng from "../assets/resume/resume.png";
+import resumePdf from "../assets/resume/resume.pdf";
 
 const DownloadResume = (props) => {
   return (
@@ -25,7 +26,7 @@ const Resume = () => {
           alt="resume"
         />
       </div>
-      <DownloadResume ext="PDF" file={resumePng} />
+      <DownloadResume ext="PDF" file={resumePdf} />
       <DownloadResume ext="PNG" file={resumePng} />
     </div>
   );
