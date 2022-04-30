@@ -8,10 +8,10 @@ const UnderlinedText = ({ text }) => {
 
 const About = () => {
   return (
-    <div name="about" class="w-full h-screen text-white">
-      <div class="flex flex-col justify-center items-center w-full h-full">
+    <div name="about" class="w-full sm:h-screen text-white">
+      <div class="flex flex-col justify-center  items-center w-full h-full">
         <div class="max-w-[1000px] w-full grid grid-cols-2 gap-8">
-          <div class="sm:text-right xs:mt-8 sm:mt-0 pb-6 pl-4">
+          <div class="sm:text-right xs:mt-8 sm:mt-0 pb-6 pl-4 mt-24">
             <p class="xs:text-2xl sm:text-4xl font-bold inline border-b-4 border-secondary">
               À propos de moi
             </p>
@@ -20,10 +20,15 @@ const About = () => {
         </div>
         <div class="max-w-[1000px] w-full grid sm:grid-cols-2 gap-8 px-4">
           <div class="sm:text-left text-3xl font-bold">
-            <div class="text-transparent bg-clip-text bg-gradient-to-br from-secondary to-main">
-              <div>• Président d'EpiSolidaire</div>
-              <div>• Lead Dev chez EpiSolidaire</div>
-              <div>• Développeur chez Epitech</div>
+            <div class=" bg-clip-text bg-gradient-to-br from-secondary to-main">
+              <div class="text-transparent bg-clip-text bg-gradient-to-br from-secondary to-main">
+                <div class="inline">• Président d'EpiSolidaire </div>
+                <br />
+                <div class="inline">• Lead Dev chez EpiSolidaire</div>
+                <br />
+                <div class="inline">• Développeur chez Epitech</div>
+                <br />
+              </div>
             </div>
           </div>
           <div>
