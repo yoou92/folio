@@ -31,7 +31,7 @@ const Skill = (props) => {
 
 const Skills = () => {
   return (
-    <div name="skills" class="w-full h-screen text-white">
+    <div name="skills" class="w-full sm:h-screen text-white">
       <div class="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full">
         <div>
           <p class="text-4xl font-bold inline border-b-4 border-secondary">
