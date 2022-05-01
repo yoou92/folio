@@ -47,12 +47,17 @@ const Projet = (props) => {
         </div>
 
         {props.description.map((text, i) => (
-          <div className="text-white text-base">{text}</div>
+          <div key={i} className="text-white text-base">
+            {text}
+          </div>
         ))}
       </div>
       <div className="px-6 pt-4 pb-2">
         {props.techUsed.map((tech, i) => (
-          <span className="inline-block bg-white rounded-full px-3 py-1 text-sm font-semibold text-secondary mr-2 mb-2">
+          <span
+            key={i}
+            className="inline-block bg-white rounded-full px-3 py-1 text-sm font-semibold text-secondary mr-2 mb-2"
+          >
             {tech}
           </span>
         ))}
