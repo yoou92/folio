@@ -12,6 +12,7 @@ import printf from "../assets/projets/printf.png";
 import database from "../assets/projets/database.png";
 import cash_register from "../assets/projets/cash_register.png";
 import EpiSolidaire from "../assets/projets/EpiSolidaire.png";
+import webac from "../assets/projets/webac.jpg";
 import web from "../assets/projets/web.jpg";
 
 import DownButtonRedirect from "./DownButtonRedirect";
@@ -91,6 +92,17 @@ const Projets = () => {
         ]}
         done={true}
         nmemb={5}
+      />
+      <Projet
+        name="Professeur de PHP"
+        logo={webac}
+        description={[
+          "Professeur / Assistant lors d'une piscine de PHP pour la Web@cademie.",
+          "Durant 3 semaines, j'ai accompagné des futurs développeurs dans l'apprentissage de la programmation en commençant par le langage PHP tout en gérant mes projets en parallèle.",
+        ]}
+        techUsed={["PHP", "GitHub"]}
+        done={true}
+        nmemb={2}
       />
       <Projet
         name="EpiSolidaire"
