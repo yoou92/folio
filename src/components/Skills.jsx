@@ -21,10 +21,10 @@ const Skill = (props) => {
   return (
     <div className="shadow-lg shadow-secondary hover:scale-110 duration-300 hover:shadow-main">
       <img className="my-4 w-20 mx-auto" src={props.logo} alt="icon" />
-      <p className="my-4 text-white font-semibold">
+      <div className="my-4 text-white font-semibold">
         {props.name === "GitHub" ? <div className="py-2" /> : null}
         {props.name}
-      </p>
+      </div>
     </div>
   );
 };
@@ -34,9 +34,9 @@ const Skills = () => {
     <div name="skills" className="w-full sm:h-screen text-white">
       <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full">
         <div>
-          <p className="text-4xl font-bold inline border-b-4 border-secondary">
+          <div className="text-4xl font-bold inline border-b-4 border-secondary">
             Compétences
-          </p>
+          </div>
         </div>
         <div className="w-full grid grid-cols-3 xs:grid-cols-5 sm:grid-cols-5 gap-4 md:gap-6 text-center py-8">
           <Skill name="C" logo={C} />
