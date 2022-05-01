@@ -21,34 +21,38 @@ import "./ScrollBar.css";
 
 const Projet = (props) => {
   return (
-    <div class="">
-      <div class="flex items-center justify-center w-full pt-4 h-full object-center">
+    <div className="">
+      <div className="flex items-center justify-center w-full pt-4 h-full object-center">
         <img
-          class="rounded-xl bg-cover bg-center"
+          className="rounded-xl bg-cover bg-center"
           src={props.logo}
           alt={props.name}
         />
       </div>
-      <div class="px-6 py-4">
-        <div class="text-white font-bold text-2xl mb-8">
+      <div className="px-6 py-4">
+        <div className="text-white font-bold text-2xl mb-8">
           <div>{props.name}</div>
-          <div class="text-base font-normal">
+          <div className="text-base font-normal">
             Groupe de {props.nmemb} personne{props.nmemb > 1 ? "s" : ""}
           </div>
           {props.done ? (
-            <div class="text-secondary flex justify-end text-md">Terminé</div>
+            <div className="text-secondary flex justify-end text-md">
+              Terminé
+            </div>
           ) : (
-            <div class="text-main flex justify-end text-md">En cours...</div>
+            <div className="text-main flex justify-end text-md">
+              En cours...
+            </div>
           )}
         </div>
 
         {props.description.map((text, i) => (
-          <div class="text-white text-base">{text}</div>
+          <div className="text-white text-base">{text}</div>
         ))}
       </div>
-      <div class="px-6 pt-4 pb-2">
+      <div className="px-6 pt-4 pb-2">
         {props.techUsed.map((tech, i) => (
-          <span class="inline-block bg-white rounded-full px-3 py-1 text-sm font-semibold text-secondary mr-2 mb-2">
+          <span className="inline-block bg-white rounded-full px-3 py-1 text-sm font-semibold text-secondary mr-2 mb-2">
             {tech}
           </span>
         ))}
@@ -59,7 +63,7 @@ const Projet = (props) => {
 
 const Projets = () => {
   return (
-    <div class="overflow-y-auto h-4/6 shadow-lg shadow-main space-y-20 border-main border-2 rounded-lg p-4 divide-y divide-solid divide-secondary">
+    <div className="overflow-y-auto h-4/6 shadow-lg shadow-main space-y-20 border-main border-2 rounded-lg p-4 divide-y divide-solid divide-secondary">
       <Projet
         name="Ublo"
         logo={ublo}
@@ -304,16 +308,16 @@ const Projets = () => {
 
 const Work = () => {
   return (
-    <div name="work" class="w-full h-screen text-white">
-      <div class="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full">
-        <div class="pb-8">
-          <p class="text-4xl font-bold inline border-b-4 text-white border-secondary">
+    <div name="work" className="w-full h-screen text-white">
+      <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full">
+        <div className="pb-8">
+          <p className="text-4xl font-bold inline border-b-4 text-white border-secondary">
             Expériences
           </p>
         </div>
-        <div class="inline text-right">(Défilable)</div>
+        <div className="inline text-right">(Défilable)</div>
         <Projets />
-        <div class="flex p-4 justify-between">
+        <div className="flex p-4 justify-between">
           <DownButtonRedirect to="contact" />
           <UpButtonRedirect to="skills" />
         </div>

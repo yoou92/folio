@@ -19,10 +19,10 @@ import UpButtonRedirect from "./UpButtonRedirect";
 
 const Skill = (props) => {
   return (
-    <div class="shadow-lg shadow-secondary hover:scale-110 duration-300 hover:shadow-main">
-      <img class="my-4 w-20 mx-auto" src={props.logo} alt="icon" />
-      <p class="my-4 text-white font-semibold">
-        {props.name === "GitHub" ? <div class="py-2" /> : null}
+    <div className="shadow-lg shadow-secondary hover:scale-110 duration-300 hover:shadow-main">
+      <img className="my-4 w-20 mx-auto" src={props.logo} alt="icon" />
+      <p className="my-4 text-white font-semibold">
+        {props.name === "GitHub" ? <div className="py-2" /> : null}
         {props.name}
       </p>
     </div>
@@ -31,14 +31,14 @@ const Skill = (props) => {
 
 const Skills = () => {
   return (
-    <div name="skills" class="w-full sm:h-screen text-white">
-      <div class="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full">
+    <div name="skills" className="w-full sm:h-screen text-white">
+      <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full">
         <div>
-          <p class="text-4xl font-bold inline border-b-4 border-secondary">
+          <p className="text-4xl font-bold inline border-b-4 border-secondary">
             Compétences
           </p>
         </div>
-        <div class="w-full grid grid-cols-3 xs:grid-cols-5 sm:grid-cols-5 gap-4 md:gap-6 text-center py-8">
+        <div className="w-full grid grid-cols-3 xs:grid-cols-5 sm:grid-cols-5 gap-4 md:gap-6 text-center py-8">
           <Skill name="C" logo={C} />
           <Skill name="C++" logo={Cpp} />
           <Skill name="Bash" logo={Bash} />
@@ -55,7 +55,7 @@ const Skills = () => {
           <Skill name="CSS" logo={CSS} />
           <Skill name="Visual Studio Code" logo={VSCode} />
         </div>
-        <div class="flex justify-between">
+        <div className="flex justify-between">
           <DownButtonRedirect to="work" />
           <UpButtonRedirect to="about" />
         </div>
