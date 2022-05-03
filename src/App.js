@@ -7,7 +7,7 @@ import Work from "./components/Work";
 
 function App() {
   return (
-    <div>
+    <div className="font-sans">
       <Navbar />
       <div className="bg-gradient-to-br from-main via-black to-secondary ">
         <Home />
