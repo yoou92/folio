@@ -38,28 +38,32 @@ const Home = () => {
         <div className="pt-24">
           <div className="text-secondary font-bold text-xl">Salutations !</div>
           <div className="text-4xl sm:text-7xl font-bold text-white ">
-            Wassini Bouzidi
+            <strong>Wassini Bouzidi</strong>
           </div>
         </div>
         <div className="text-4xl sm:text-6xl font-bold text-gray-400">
-          Développeur chez Epitech Paris
+          <strong>Développeur chez Epitech Paris</strong>
         </div>
         <div className="text-white py-4 max-w-[700px] mt-6">
           <p className="inline">
             Passionné par le développement de jeux vidéo, de système automatisé
           </p>{" "}
-          <p className="inline underline underline-offset-2">(C / C++)</p> mais
-          également du développement web{" "}
           <p className="inline underline underline-offset-2">
-            (JS, TS, React, Node, TailwindCSS)
+            <strong>(C / C++)</strong>
+          </p>{" "}
+          mais également du développement web{" "}
+          <p className="inline underline underline-offset-2">
+            <strong>(JS, TS, React, Node, TailwindCSS)</strong>
           </p>
           .
           <div className="mt-2">
-            Pour ma 3ème année je suis à la recherche d'un part-time de deux
-            jours par semaine d'octobre à avril, suivi d'un stage d'avril aux
-            environ d'août <EndIntern /> afin d'appronfondir mes connaissances,
-            d'évoluer dans un domaine qui me plait et de pourvoir satisfaire un
-            besoin.
+            Pour ma 3ème année je suis à la recherche d'un{" "}
+            <strong>part-time</strong> de deux jours par semaine d'
+            <strong>octobre</strong> à <strong>avril</strong>, suivi d'un{" "}
+            <strong>stage</strong> d'<strong>avril</strong> aux environ d'
+            <strong>août</strong> <EndIntern /> afin d'appronfondir mes
+            connaissances, d'évoluer dans un domaine qui me plait et de pourvoir
+            satisfaire un besoin.
           </div>
           <div className="mt-10 font-semibold">Prêt à me découvrir ?</div>
         </div>
