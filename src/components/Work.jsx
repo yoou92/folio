@@ -12,6 +12,8 @@ import printf from "../assets/projets/printf.png";
 import database from "../assets/projets/database.png";
 import cash_register from "../assets/projets/cash_register.png";
 import EpiSolidaire from "../assets/projets/EpiSolidaire.png";
+import zappy from "../assets/projets/zappy.png";
+import bomberman from "../assets/projets/bomberman.jpg";
 import webac from "../assets/projets/webac.jpg";
 import web from "../assets/projets/web.jpg";
 
@@ -148,9 +150,32 @@ const Projets = () => {
         name="my_teams"
         logo={teams}
         description={["Recoder teams"]}
-        techUsed={["C", "Makefile", "GitHub"]}
+        techUsed={["C", "Makefile", "GitHub", "AI"]}
         done={false}
         nmemb={3}
+      />
+      <Projet
+        name="Zappy"
+        logo={zappy}
+        description={[
+          "Le but de ce projet est de créer un jeu en réseau.",
+          "Plusieurs équipes s'affrontent sur une carte de tuiles contenant des ressources.",
+          "L'équipe gagnante est celle avec 6 joueurs qui a atteint l'élévation maximale.",
+        ]}
+        techUsed={["C", "Makefile", "GitHub"]}
+        done={false}
+        nmemb={6}
+      />
+      <Projet
+        name="Indie Studio"
+        logo={bomberman}
+        description={[
+          "L'objectif de ce projet est de mettre en œuvre un jeu vidéo 3D multiplateforme avec des outils du monde réel",
+          "Le jeu en question est un bomberman en 3D.",
+        ]}
+        techUsed={["C++", "raylib", "cmake", "GitHub"]}
+        done={false}
+        nmemb={6}
       />
       <Projet
         name="my_rpg"
@@ -249,7 +274,7 @@ const Projets = () => {
         description={[
           "Recoder les fonctions malloc, realloc, calloc, reallocarray et free.",
         ]}
-        techUsed={["C", "Makefile", "GitHub"]}
+        techUsed={["C", "Makefile", "GitHub", "sbrk", "memory management"]}
         done={true}
         nmemb={1}
       />
