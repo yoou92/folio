@@ -150,7 +150,7 @@ const Projets = () => {
         name="my_teams"
         logo={teams}
         description={["Recoder teams"]}
-        techUsed={["C", "Makefile", "GitHub"]}
+        techUsed={["C", "Makefile", "GitHub", "Programmation réseau"]}
         done={false}
         nmemb={3}
       />
@@ -162,7 +162,16 @@ const Projets = () => {
           "Plusieurs équipes s'affrontent sur une carte de tuiles contenant des ressources.",
           "L'équipe gagnante est celle avec 6 joueurs qui a atteint l'élévation maximale.",
         ]}
-        techUsed={["C", "Makefile", "GitHub", "AI"]}
+        techUsed={[
+          "C",
+          "C++",
+          "Python",
+          "raylib",
+          "Makefile",
+          "GitHub",
+          "AI",
+          "Programmation réseau",
+        ]}
         done={false}
         nmemb={6}
       />
