@@ -151,7 +151,7 @@ const Projets = () => {
         logo={teams}
         description={["Recoder teams"]}
         techUsed={["C", "Makefile", "GitHub", "Programmation réseau"]}
-        done={false}
+        done={true}
         nmemb={3}
       />
       <Projet
