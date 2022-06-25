@@ -8,12 +8,11 @@ import teams from "../assets/projets/teams.png";
 import runner from "../assets/projets/runner.png";
 import defender from "../assets/projets/defender.png";
 import hunter from "../assets/projets/hunter.png";
-import printf from "../assets/projets/printf.png";
 import database from "../assets/projets/database.png";
 import cash_register from "../assets/projets/cash_register.png";
 import EpiSolidaire from "../assets/projets/EpiSolidaire.png";
 import zappy from "../assets/projets/zappy.png";
-import bomberman from "../assets/projets/bomberman.jpg";
+import bomberman from "../assets/projets/bomberman.png";
 import webac from "../assets/projets/webac.jpg";
 import web from "../assets/projets/web.jpg";
 
@@ -134,23 +133,10 @@ const Projets = () => {
         nmemb={1}
       />
       <Projet
-        name="Arcade"
-        logo={arcade}
-        description={[
-          "L'objectif de ce projet était de crée une plateforme de jeu, avec un seul core qui peut charger dynamiquement plusieurs bibliothèques graphiques différentes et avec au moins deux jeux.",
-          "Les librairies graphiques choisies ont été la SFML, la Ncurses et la SDL2.",
-          "Les jeux choisies ont été Nibbler et Pacman.",
-          "Le joueur peut choisir son pseudo, selectionnez son jeu, dynamiquement changer de librairie graphique et a un score enregistré dans une base de données.",
-        ]}
-        techUsed={["C++", "SFML", "NCurses", "SDL2", "Makefile", "GitHub"]}
-        done={true}
-        nmemb={3}
-      />
-      <Projet
         name="my_teams"
         logo={teams}
         description={["Recoder teams"]}
-        techUsed={["C", "Makefile", "GitHub", "Programmation réseau"]}
+        techUsed={["C", "Makefile", "GitHub", "Programmation réseau", "CLI"]}
         done={true}
         nmemb={3}
       />
@@ -161,18 +147,19 @@ const Projets = () => {
           "Le but de ce projet est de créer un jeu en réseau.",
           "Plusieurs équipes s'affrontent sur une carte de tuiles contenant des ressources.",
           "L'équipe gagnante est celle avec 6 joueurs qui a atteint l'élévation maximale.",
+          "Les joueurs sont contrôlés par une intelligence artificielle.",
         ]}
         techUsed={[
           "C",
           "C++",
           "Python",
-          "raylib",
+          "Raylib",
           "Makefile",
           "GitHub",
           "AI",
           "Programmation réseau",
         ]}
-        done={false}
+        done={true}
         nmemb={6}
       />
       <Projet
@@ -182,9 +169,30 @@ const Projets = () => {
           "L'objectif de ce projet est de mettre en œuvre un jeu vidéo 3D multiplateforme avec des outils du monde réel",
           "Le jeu en question est un bomberman en 3D.",
         ]}
-        techUsed={["C++", "raylib", "cmake", "GitHub"]}
-        done={false}
+        techUsed={["C++", "Raylib", "cmake", "GitHub"]}
+        done={true}
         nmemb={6}
+      />
+      <Projet
+        name="Arcade"
+        logo={arcade}
+        description={[
+          "L'objectif de ce projet était de crée une plateforme de jeu, avec un seul core qui peut charger dynamiquement plusieurs bibliothèques graphiques différentes et avec au moins deux jeux.",
+          "Les librairies graphiques choisies ont été la SFML, la Ncurses et la SDL2.",
+          "Les jeux choisies ont été Nibbler et Pacman.",
+          "Le joueur peut choisir son pseudo, selectionnez son jeu, dynamiquement changer de librairie graphique et a un score enregistré dans une base de données.",
+        ]}
+        techUsed={[
+          "C++",
+          "SFML",
+          "NCurses",
+          "SDL2",
+          "Makefile",
+          "GitHub",
+          "Shared librairies",
+        ]}
+        done={true}
+        nmemb={3}
       />
       <Projet
         name="my_rpg"
@@ -284,14 +292,6 @@ const Projets = () => {
           "Recoder les fonctions malloc, realloc, calloc, reallocarray et free.",
         ]}
         techUsed={["C", "Makefile", "GitHub", "sbrk", "memory management"]}
-        done={true}
-        nmemb={1}
-      />
-      <Projet
-        name="my_printf"
-        logo={printf}
-        description={["Recoder la fonction printf."]}
-        techUsed={["C", "Makefile", "GitHub"]}
         done={true}
         nmemb={1}
       />
