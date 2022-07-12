@@ -50,7 +50,7 @@ const Skills = () => {
           <Skill name="NodeJS" logo={Node} />
           <Skill name="Tailwind CSS" logo={Tailwind} />
           <Skill name="PostgreSQL" logo={PostgreSQL} />
-          <Skill name="Mongo DB" logo={Mongo} />
+          <Skill name="MongoDB" logo={Mongo} />
           <Skill name="HTML" logo={HTML} />
           <Skill name="CSS" logo={CSS} />
           <Skill name="Visual Studio Code" logo={VSCode} />
