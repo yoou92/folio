@@ -4,29 +4,24 @@ import { HiArrowNarrowRight } from "react-icons/hi";
 import HelpOutlineIcon from "@mui/icons-material/HelpOutline";
 import CloseIcon from "@mui/icons-material/Close";
 
-const EndIntern = () => {
+const Help = ({ text }) => {
   const [open, setOpen] = useState(false);
-
-  const Help = () => {
-    return (
-      <div className="absolute">
-        <button className="absolute top-0 right-0 -mt-3 -mr-2">
-          <CloseIcon
-            style={{ fontSize: 30, color: "red" }}
-            onClick={() => setOpen(false)}
-          />
-        </button>
-        <div className="bg-white rounded-xl border-2 border-main text-main text-lg p-3">
-          La date de fin dépend de la date de rentrée de ma 4ème année.
-        </div>
-      </div>
-    );
-  };
-
   return (
     <button type="button" className="cursor-pointer">
       <HelpOutlineIcon onClick={() => setOpen(!open)} />
-      {open && <Help />}
+      {open && (
+        <div className="z-40 absolute">
+          <button className="absolute top-0 right-0 -mt-3 -mr-2">
+            <CloseIcon
+              style={{ fontSize: 30, color: "red" }}
+              onClick={() => setOpen(false)}
+            />
+          </button>
+          <div className="bg-white rounded-xl border-2 border-main text-main text-lg p-3">
+            {text}
+          </div>
+        </div>
+      )}
     </button>
   );
 };
@@ -50,22 +45,24 @@ const Home = () => {
           <p className="inline">
             Passionné par le développement de jeux vidéo, de système automatisé
           </p>{" "}
+          (
           <p className="inline underline underline-offset-2">
-            <strong>(C / C++)</strong>
-          </p>{" "}
-          mais également du développement web{" "}
-          <p className="inline underline underline-offset-2">
-            <strong>(JS, TS, React, Node, TailwindCSS)</strong>
+            <strong>C / C++</strong>
           </p>
-          .
+          ) mais également du développement web (
+          <p className="inline underline underline-offset-2">
+            <strong>JS, TS, React, Node.js, MongoDB, TailwindCSS</strong>
+          </p>
+          ).
           <div className="mt-2">
             Pour ma 3ème année je suis à la recherche d'un{" "}
-            <strong>part-time</strong> de deux jours par semaine d'
-            <strong>octobre</strong> à <strong>avril</strong>, suivi d'un{" "}
-            <strong>stage</strong> d'<strong>avril</strong> aux environ d'
-            <strong>août</strong> <EndIntern /> afin d'appronfondir mes
-            connaissances, d'évoluer dans un domaine qui me plait et de pourvoir
-            satisfaire un besoin.
+            {/* <strong>part-time</strong> de deux jours par semaine d'
+             <strong>octobre</strong> à <strong>avril</strong>, suivi d'un{" "} */}
+            <strong>stage</strong> de début <strong>avril</strong> à fin{" "}
+            <strong>août</strong> afin d'appronfondir mes connaissances,
+            d'évoluer dans un domaine qui me plait et de pourvoir satisfaire un
+            besoin.{" "}
+            <Help text="Je suis également disponible pour de la freelance après cette date" />
           </div>
           <div className="mt-10 font-semibold">Prêt à me découvrir ?</div>
         </div>
