@@ -19,7 +19,7 @@ import UpButtonRedirect from "./UpButtonRedirect";
 
 const Skill = (props) => {
   return (
-    <div className="shadow-lg shadow-secondary hover:scale-110 duration-300 hover:shadow-main">
+    <div className="-z-1 reveal shadow-lg shadow-secondary hover:scale-110 duration-300 hover:shadow-main">
       <img className="my-4 w-20 mx-auto" src={props.logo} alt="icon" />
       <div className="my-4 text-white font-semibold">
         {props.name === "GitHub" ? <div className="py-2" /> : null}

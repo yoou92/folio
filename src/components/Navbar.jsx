@@ -47,7 +47,7 @@ const Navbar = () => {
   const handleClick = () => setNav(!nav);
 
   return (
-    <div className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-white">
+    <div className="z-50 fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-white">
       <br />
       {/* menu */}
       <ul className="hidden md:flex">
@@ -127,10 +127,10 @@ const Navbar = () => {
           </li>
         </ul>
       </div>
-      <div className="flex lg:hidden fixed space-x-3">
+      <div className="flex z-999 lg:hidden fixed space-x-3">
         <li className="flex py-2 rounded-xl hover:scale-125 bg-blue-600">
           <SocialBar
-            icon={<FaLinkedin size={30} />}
+            icon={<FaLinkedin size={0} />}
             redirect="https://www.linkedin.com/in/wassini-bouzidi/"
           />
         </li>

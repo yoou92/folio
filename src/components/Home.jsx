@@ -36,8 +36,10 @@ const Home = () => {
     <div name="home" className="w-full h-screen">
       <div className="max-w-[1000px] mx-auto px-8 flex flex-col justify-center h-full">
         <div className="pt-24">
-          <div className="text-secondary font-bold text-xl">Salutations !</div>
-          <div className="text-4xl sm:text-7xl font-bold text-white ">
+          <div className="text-secondary font-bold text-xl FromTop">
+            Salutations !
+          </div>
+          <div className="FromLeft text-4xl sm:text-7xl font-bold text-white ">
             <strong>Wassini Bouzidi</strong>
           </div>
         </div>
@@ -76,9 +78,9 @@ const Home = () => {
               </span>
             </button>
           </Link>
-          <div>
+          <div className="FromBottom">
             <a
-              className="p-3 border-2 font-semibold text-white rounded-xl transition-all duration-500 bg-gradient-to-br from-main via-black to-secondary bg-size-200 hover:bg-right-bottom"
+              className="FromRight p-3 border-2 font-semibold text-white rounded-xl transition-all duration-500 bg-gradient-to-br from-main via-black to-secondary bg-size-200 hover:bg-right-bottom"
               href="resume"
               target="_blank"
               rel="noreferrer"

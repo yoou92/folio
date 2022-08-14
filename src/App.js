@@ -5,7 +5,23 @@ import Navbar from "./components/Navbar";
 import Skills from "./components/Skills";
 import Work from "./components/Work";
 
-function App() {
+const reveal = () => {
+  const reveals = document.querySelectorAll(".reveal");
+
+  for (var i = 0; i < reveals.length; ++i) {
+    const windowHeight = window.innerHeight;
+    const elementTop = reveals[i].getBoundingClientRect().top;
+    const posElementVisible = 70;
+
+    if (elementTop < windowHeight - posElementVisible)
+      reveals[i].classList.add("active");
+    else reveals[i].classList.remove("active");
+  }
+};
+
+window.addEventListener("scroll", reveal);
+
+const App = () => {
   return (
     <div className="font-sans">
       <Navbar />
@@ -18,6 +34,6 @@ function App() {
       </div>
     </div>
   );
-}
+};
 
 export default App;
