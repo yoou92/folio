@@ -6,17 +6,22 @@ import CloseIcon from "@mui/icons-material/Close";
 
 const Help = ({ text }) => {
   const [open, setOpen] = useState(false);
+  const CloseButton = () => {
+    return (
+      <div className="absolute top-0 right-0 -mt-3 -mr-2">
+        <CloseIcon
+          style={{ fontSize: 30, color: "red" }}
+          onClick={() => setOpen(false)}
+        />
+      </div>
+    );
+  };
   return (
     <button type="button" className="cursor-pointer">
       <HelpOutlineIcon onClick={() => setOpen(!open)} />
       {open && (
         <div className="z-40 absolute">
-          <button className="absolute top-0 right-0 -mt-3 -mr-2">
-            <CloseIcon
-              style={{ fontSize: 30, color: "red" }}
-              onClick={() => setOpen(false)}
-            />
-          </button>
+          <CloseButton />
           <div className="bg-white rounded-xl border-2 border-main text-main text-lg p-3">
             {text}
           </div>
