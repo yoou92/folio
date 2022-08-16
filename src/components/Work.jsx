@@ -126,7 +126,9 @@ const Projets = () => {
           "NodeJS",
           "MongoDB",
           "TailwindCSS",
+          "CSS",
           "Postman",
+          "SendGrid",
           "GitHub",
         ]}
         done={false}
