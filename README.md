@@ -1,7 +1,5 @@
 ## Project Name & Pitch
 
-#### Example:
-
 Portfolio
 
 A simple portfolio to talk about me, build in React, TailwindCSS, and CSS.
@@ -9,8 +7,6 @@ A simple portfolio to talk about me, build in React, TailwindCSS, and CSS.
 Link to visit it : https://www.wassini-bouzidi.com/
 
 ## Installation and Setup Instructions
-
-#### Example:
 
 Clone down this repository. You will need `node` and `npm` installed globally on your machine.
 
