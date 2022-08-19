@@ -129,6 +129,7 @@ const Projets = () => {
           "CSS",
           "Postman",
           "SendGrid",
+          "Paypal SDK API",
           "GitHub",
         ]}
         done={false}
