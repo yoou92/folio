@@ -46,7 +46,10 @@ const Projet = (props) => {
             </div>
           )}
           <div className="text-base font-normal">
-            Groupe de {props.nmemb} personne{props.nmemb > 1 ? "s" : ""}
+            Réaliser en{" "}
+            {props.nmemb === 1
+              ? "solo"
+              : "groupe de " + props.nmemb + " membres"}
           </div>
           {props.done ? (
             <div className="text-secondary flex justify-end text-md">
@@ -130,7 +133,7 @@ const Projets = () => {
         name="EpiSolidaire"
         logo={EpiSolidaire}
         description={[
-          "Site pour promouvoir l'association, pouvoir se présenter en ligne, voir les évènements à venir, accéder à son espace membre et par conséquent accéder aux nombres d'activités réalisés etc...",
+          "Site pour promouvoir l'association, pouvoir se présenter en ligne, reçevoir des dons, voir les évènements à venir et passé, nous contactez, accéder à son espace membre et par conséquent accéder à son dashboard",
         ]}
         techUsed={[
           "JavaScript",
