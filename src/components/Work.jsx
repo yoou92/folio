@@ -33,6 +33,18 @@ const Projet = (props) => {
       <div className="px-6 py-4">
         <div className="text-white font-bold text-2xl mb-8">
           <div>{props.name}</div>
+          {props.url && (
+            <div className="text-base font-normal">
+              Lien :{" "}
+              <a
+                className="underline underline-offset-4 text-[#6be0dc]"
+                href={props.url}
+                target="_blank"
+              >
+                {props.url}
+              </a>
+            </div>
+          )}
           <div className="text-base font-normal">
             Groupe de {props.nmemb} personne{props.nmemb > 1 ? "s" : ""}
           </div>
@@ -128,12 +140,16 @@ const Projets = () => {
           "TailwindCSS",
           "CSS",
           "Postman",
+          "EmailJS",
           "SendGrid",
           "Paypal SDK API",
           "GitHub",
+          "Netlify",
+          "Heroku",
         ]}
-        done={false}
+        done={true}
         nmemb={1}
+        url="https://episolidaire.com"
       />
       <Projet
         name="my_teams"
