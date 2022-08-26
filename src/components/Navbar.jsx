@@ -49,7 +49,6 @@ const Navbar = () => {
   return (
     <div className="z-50 fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-white">
       <br />
-      {/* menu */}
       <ul className="hidden md:flex">
         <MenuBar to="home" name="Accueil" />
         <MenuBar to="about" name="À propos de moi" />
@@ -58,12 +57,10 @@ const Navbar = () => {
         <MenuBar to="contact" name="Contact" />
       </ul>
 
-      {/* Hamburger */}
       <div onClick={handleClick} className="md:hidden z-10">
         {!nav ? <FaBars size={32} /> : <FaTimes size={32} />}
       </div>
 
-      {/* Mobile menu */}
       <ul
         className={
           !nav
@@ -94,7 +91,6 @@ const Navbar = () => {
         />
       </ul>
 
-      {/* Social icons */}
       <div className="hidden lg:flex fixed flex-col top-[35%] left-0">
         <ul>
           <li className="rounded-xl w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-600">

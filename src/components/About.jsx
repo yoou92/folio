@@ -31,7 +31,7 @@ const About = () => {
               </div>
             </div>
           </div>
-          <div>
+          <div className="space-y-4">
             <div className="reveal">
               <UnderlinedText text="Passionné" />,{" "}
               <UnderlinedText text="autodidacte" /> et{" "}
@@ -57,10 +57,15 @@ const About = () => {
             <div className="reveal">
               L'association dispose également d'une{" "}
               <UnderlinedText text="équipe de développeurs" /> dont je suis le
-              lead car nous sommes actuellement en train de développer notre
-              propre site EpiSolidaire et que certains{" "}
-              <UnderlinedText text="projets de solidarité" /> se font également
-              dans le domaine de la programmation.
+              lead. Voici notre site :{" "}
+              <a
+                className="underline underline-offset-4 text-[#6be0dc]"
+                href="https://episolidaire.com"
+                target="_blank"
+              >
+                EpiSolidaire
+              </a>
+              .
             </div>
           </div>
           <DownButtonRedirect to="skills" />

@@ -60,14 +60,16 @@ const Home = () => {
           </p>
           ).
           <div className="mt-2">
-            Pour ma 3ème année je suis à la recherche d'un{" "}
-            {/* <strong>part-time</strong> de deux jours par semaine d'
-             <strong>octobre</strong> à <strong>avril</strong>, suivi d'un{" "} */}
+            Actuellement en 3ème année je suis à la recherche d'un{" "}
             <strong>stage</strong> de début <strong>avril</strong> à fin{" "}
             <strong>août</strong> afin d'appronfondir mes connaissances,
             d'évoluer dans un domaine qui me plait et de pourvoir satisfaire un
             besoin.{" "}
             <Help text="Je suis également disponible pour de la freelance après cette date" />
+          </div>
+          <div className="mt-2">
+            Ce portfolio a était coder en React, TailwindCSS et CSS par
+            moi-même.
           </div>
           <div className="mt-10 font-semibold">Prêt à me découvrir ?</div>
         </div>
