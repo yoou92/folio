@@ -63,7 +63,7 @@ const Home = () => {
             Actuellement en 3ème année je suis à la recherche d'un{" "}
             <strong>stage</strong> de début <strong>avril</strong> à fin{" "}
             <strong>août</strong> afin d'appronfondir mes connaissances,
-            d'évoluer dans un domaine qui me plait et de pourvoir satisfaire un
+            d'évoluer dans un domaine qui me plait et de pouvoir satisfaire un
             besoin.{" "}
             <Help text="Je suis également disponible pour de la freelance après cette date" />
           </div>
