@@ -1,10 +1,10 @@
-## Project Name & Pitch
+## Project Pitch
 
 Portfolio
 
 A simple portfolio to talk about me, build in React, TailwindCSS, and CSS.
 
-Link to visit it : https://www.wassini-bouzidi.com/
+
 
 ## Installation and Setup Instructions
 
